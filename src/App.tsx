@@ -1,11 +1,13 @@
 
 import './App.css'
-import BoxMotion from './components/BoxMotion'
+//import BoxMotion from './components/BoxMotion'
+import Lesson3 from './components/Lesson3'
 function App() {
 
   return (
-    <div>
-       <BoxMotion></BoxMotion>
+    <div className='flex h-screen w-full justify-center items-center'>
+       {/* <BoxMotion /> */}
+       <Lesson3/>
     </div>
   )
 }
