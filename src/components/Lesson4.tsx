@@ -36,6 +36,10 @@ const Lesson4 = () => {
         dragElastic={1}
       //   dragConstraints={{left:-200, right:200, top:-200, bottom:200}}
         dragConstraints={parentRef}
+        whileDrag={{
+         scale:1.1,
+         boxShadow:'0px 10px 10px #000'
+        }}
       >
       </motion.div>
     </div>
