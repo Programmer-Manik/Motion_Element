@@ -6,9 +6,19 @@ const parent = {
                scale: 0.7 ,
                transition:{
                   ease: "easeInOut",
-                  duration:0.5,
+                  duration:2,
                 }
             },
+   hover:{
+      scale:3,
+         transition:{
+            duration:8
+         }
+   },
+
+   tap:{
+      scale:1,rotate:45
+   }
 };
 
 const Lesson3 = () => {
@@ -19,7 +29,10 @@ const Lesson3 = () => {
         variants={parent}
         initial="hidden"
         animate="visible"
-        whileHover={{scale:1.1}}
+        whileHover="hover"
+        whileTap="tap"
+        onHoverStart={() => console.log('onHover')}
+        onHoverEnd={() => console.log('endHover')}
       >
       </motion.div>
     </div>
