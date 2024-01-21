@@ -1,6 +1,7 @@
 
 import './App.css'
-import Lesson7 from './components/Lesson7'
+import Lesson8 from './components/Lesson8'
+//import Lesson7 from './components/Lesson7'
 //import BoxMotion from './components/BoxMotion'
 // import Lesson3 from './components/Lesson3'
 //import Lesson4 from './components/Lesson4'
@@ -9,13 +10,15 @@ import Lesson7 from './components/Lesson7'
 function App() {
 
   return (
-    <div className='flex h-screen w-full justify-center items-center'>
+    <div className='w-full flex flex-col justify-center items-center'>
        {/* <BoxMotion /> */}
        {/* <Lesson3/> */}
        {/* <Lesson4/> */}
        {/* <Lesson5/> */}
        {/* <Lesson6/> */}
-       <Lesson7/>
+       {/* <Lesson7/> */}
+       <div className='h-[200vh] w-full bg-red-400'></div>
+        <Lesson8/>
     </div>
   )
 }
