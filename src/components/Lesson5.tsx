@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 const parent = {
-  hidden: { opacity: 0, scale: 0.9 },
+  hidden: {  scale: 0.9, x:0,y:0 },
   visible: {
-    opacity: 0.5,
+    x:300,
+    y:300,
     scale: 0.7,
     transition: {
       ease: "easeInOut",
       duration: 2,
+     
     },
   },
   hover: {
@@ -15,7 +17,7 @@ const parent = {
   },
 };
 
-const Lesson4 = () => {
+const Lesson5 = () => {
   const parentRef = useRef(null);
   return (
     <div
@@ -45,4 +47,4 @@ const Lesson4 = () => {
   );
 };
 
-export default Lesson4;
+export default Lesson5;
