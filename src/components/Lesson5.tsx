@@ -1,15 +1,30 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 const parent = {
-  hidden: {  scale: 0.9, x:0,y:0 },
+  hidden: { 
+    scale: 0.9,
+     x:0,
+     y:0,
+   opacity:0
+   },
   visible: {
-    x:300,
-    y:300,
+    x:[0,300,-300,0],
+    y:[0,300,-300,0],
     scale: 0.7,
+    opacity:1,
+    rotate:[0,300,-300,0],
     transition: {
-      ease: "easeInOut",
-      duration: 2,
-     
+      ease: "linear",
+      repeat:Infinity,
+      duration: 5,
+      opacity:{
+         duration:0.5,
+      },
+      rotate:{
+         duration:1,
+         delay:0.5,
+         repeat:Infinity
+      }
     },
   },
   hover: {
