@@ -1,6 +1,7 @@
 
 import './App.css'
-import Lesson11 from './components/Lesson11'
+// import Lesson11 from './components/Lesson11'
+import Lesson12 from './components/Lesson12'
 //import Lesson10 from './components/Lesson10'
 //import Lesson8 from './components/Lesson8'
 //import Lesson7 from './components/Lesson7'
@@ -25,7 +26,12 @@ function App() {
         <Lesson8/>
         </div> */}
         {/* <Lesson10/> */}
-        <Lesson11/>
+        {/* <Lesson11/> */}
+        
+
+        <div className='h-[500vh] w-full bg-red-500'></div>
+        <Lesson12  />
+        
     </div>
   )
 }

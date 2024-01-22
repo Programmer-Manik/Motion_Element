@@ -1,9 +1,6 @@
 import { motion, useDragControls,   } from "framer-motion";
-
 const Lesson10 = () => {
    const controls = useDragControls();
-   
-
   return (
     <div className="size-[500px] flex flex-col items-center justify-center  border border-red-100">
       <motion.div 
